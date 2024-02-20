@@ -1,10 +1,12 @@
-import React from 'react';
+import { Homepage } from "./pages"
 
-const App: React.FC = () => {
+
+function App() {
   
   return (
   <>
-  <p>hello</p>
+  <div><Homepage/></div>
+  
   </>
   )
 }
