@@ -2,9 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family:  sans-serif;
+
+.font-roboto-slab {
+  font-family: 'Roboto Slab', serif;
 }
 
 
+
+
+.separation-line {
+  height: 3px; 
+   
+  background-color: #fcf4f4; 
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px; 
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 700px) {
+  .separation-line {
+    width: 10px; 
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .separation-line {
+    width: 30px; 
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 980px) {
+  .separation-line {
+    width: 100px; 
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .separation-line {
+    width: 250px; 
+  }
+}
 
