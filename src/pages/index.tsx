@@ -7,6 +7,10 @@ import simpleshell from "../assets/simple-shell.png";
 import kidangastore from "../assets/kidanga-store.jpg";
 import restfulapi from "../assets/Restful-API.jpg";
 import imagegenerationapp from "../assets/Image-generation-app.jpg";
+import { MdArrowForward } from "react-icons/md";
+// import { FaGithub, FaLinkedin } from "react-icons/fa";
+import {  Link } from 'react-router-dom';
+
 
 export const Homepage: React.FC = () => {
   return (
@@ -29,7 +33,7 @@ export const Homepage: React.FC = () => {
               Transforming ideas into <br></br> amazingly cool sites
             </h1>
             <div className="mt-5">
-              <p className="md:font-medium text-slate-600 md:text-xl text-2xl ">
+              <p className="md:font-medium font-medium text-slate-500 text-center md:text-xl text-2xl ">
                 Hello, I'm Mwadali, a front-end developer, skilled in bringing
                 websites to life with visual flair.<br></br> I create optimised
                 user-friendly interfaces that look great and work smoothly,
@@ -40,7 +44,7 @@ export const Homepage: React.FC = () => {
             </div>
           </div>
           <div className="mt-5 flex justify-center text-lg font-semibold">
-            <button className="rounded-full p-4 bg-slate-300 hover:bg-slate-500">
+            <button className="rounded-full p-6 bg-slate-300 hover:bg-slate-500">
               View Work
             </button>
           </div>
@@ -52,8 +56,13 @@ export const Homepage: React.FC = () => {
                   alt="ALX MultiTone Magic Chrome Extension"
                   className=" w-full h-auto md:h-full p-6"
                 />
-                <div>
-                  <h1 className="md:text-2xl text-xl text-slate-700 font-extrabold">ALX MultiTone-Magic Extension</h1>
+                <div className="flex justify-between ">
+                  <h1 className="md:text-2xl text-xl text-slate-700 font-extrabold px-4">
+                    ALX MultiTone-Magic Extension
+                  </h1>
+                  <Link to="/alx-magic-multitone">
+                  <MdArrowForward className="text-gray-500 md:text-4xl text-3xl" />
+                </Link>
                 </div>
               </div>
 
@@ -63,8 +72,13 @@ export const Homepage: React.FC = () => {
                   alt="Alpha Trade Image "
                   className="w-full h-auto md:h-full p-6"
                 />
-                <div>
-                  <h1 className="md:text-2xl text-xl text-slate-700 font-extrabold">Alpha Trade</h1>
+                <div className="flex justify-between ">
+                  <h1 className="md:text-2xl text-xl text-slate-700 font-extrabold px-4">
+                    Alpha Trade
+                  </h1>
+                  <Link to="/alpha-trade">
+                  <MdArrowForward className="text-gray-500 md:text-4xl text-3xl" />
+                </Link>
                 </div>
               </div>
 
@@ -74,8 +88,13 @@ export const Homepage: React.FC = () => {
                   alt="Simple shell Image"
                   className=" w-full h-auto md:h-full p-6"
                 />
-                <div>
-                  <h1 className="md:text-2xl text-xl text-slate-700 font-extrabold">Simple Shell</h1>
+                <div className="flex justify-between ">
+                  <h1 className="md:text-2xl text-xl text-slate-700 font-extrabold px-4">
+                    Simple Shell 
+                  </h1>
+                  <Link to="/simple-shell">
+                  <MdArrowForward className="text-gray-500 md:text-4xl text-3xl" />
+                </Link>
                 </div>
               </div>
               <div className="bg-slate-200 md:p-10 rounded-lg shadow-md">
@@ -84,8 +103,13 @@ export const Homepage: React.FC = () => {
                   alt="Kidanga Ecommerce store Image"
                   className="w-full h-auto md:h-full p-6 "
                 />
-                <div>
-                  <h1 className="md:text-2xl text-xl text-slate-700 font-extrabold">Kidanga Store</h1>
+                <div className="flex justify-between ">
+                  <h1 className="md:text-2xl text-xl text-slate-700 font-extrabold px-4">
+                    Kidanga Store
+                  </h1>
+                  <Link to="/kidanga-store">
+                  <MdArrowForward className="text-gray-500 md:text-4xl text-3xl" />
+                </Link>
                 </div>
               </div>
               <div className="bg-slate-200 md:p-10 rounded-lg shadow-md">
@@ -94,8 +118,13 @@ export const Homepage: React.FC = () => {
                   alt="Restful APi Image"
                   className="w-full h-auto md:h-full p-6"
                 />
-                <div>
-                  <h1 className="md:text-2xl text-xl text-slate-700 font-extrabold">Restful API</h1>
+                <div className="flex justify-between ">
+                  <h1 className="md:text-2xl text-xl text-slate-700 font-extrabold px-4">
+                    Restful API
+                  </h1>
+                  <Link to="/restful-api">
+                  <MdArrowForward className="text-gray-500 md:text-4xl text-3xl" />
+                </Link>
                 </div>
               </div>
               <div className="bg-slate-200 md:p-10 rounded-lg shadow-md">
@@ -104,12 +133,52 @@ export const Homepage: React.FC = () => {
                   alt="Image generation App Image"
                   className="w-full h-auto md:h-full p-6"
                 />
-                <div>
-                  <h1 className="md:text-2xl text-xl text-slate-700 font-extrabold">Image Generation App</h1>
+                <div className="flex justify-between ">
+                  <h1 className="md:text-2xl text-xl text-slate-700 font-extrabold px-4">
+                    Image Generation App
+                  </h1>
+                  <Link to="/image-generation-app">
+                  <MdArrowForward className="text-gray-500 md:text-4xl text-3xl" />
+                </Link>
                 </div>
               </div>
             </div>
           </div>
+          <div className="flex justify-center mt-10">
+            <h1 className="font-medium text-xl ">
+              <i>Thank you for visiting!</i>
+            </h1>
+          </div>
+         <div className="flex justify-between py-3 px-8">
+          <div className="p-3">
+          <a
+          href="mailto:wellingtonmwadali@gmail.com">
+            <p className="text-sm"> SAY HELLO</p>
+            </a>
+          </div>
+          <div className="flex font-extralight text-lg p-3 gap-6">
+            <a
+              href="https://github.com/wellingtonmwadali"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mr-4 underline"
+            >
+             
+             <p className="text-sm">GITHUB</p>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/wellington-mwadali-/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 underline"
+            >
+               <p className="text-sm">LINKEDIN</p>
+            </a>
+          </div>
+         </div>
+         <div className="flex justify-center mt-4 text-sm font-light">
+         &copy; 2024 MWADALI.
+         </div>
         </div>
       </div>
     </>
