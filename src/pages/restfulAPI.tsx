@@ -1,8 +1,10 @@
-
+import Header from "../components/header"
 
 const RestfulAPI = () => {
   return (
-    <div>R</div>
+    <div>
+        <Header/>
+    </div>
   )
 }
 

@@ -33,7 +33,7 @@ export const Homepage: React.FC = () => {
               Transforming ideas into <br></br> amazingly cool sites
             </h1>
             <div className="mt-5">
-              <p className="md:font-medium font-medium text-slate-500 text-center md:text-xl text-2xl ">
+              <p className="md:font-medium font-normal text-slate-500 text-center md:text-xl text-2xl ">
                 Hello, I'm Mwadali, a front-end developer, skilled in bringing
                 websites to life with visual flair.<br></br> I create optimised
                 user-friendly interfaces that look great and work smoothly,
@@ -49,7 +49,7 @@ export const Homepage: React.FC = () => {
             </button>
           </div>
           <div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mx-16 mt-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:mx-16 mx-6 mt-12">
               <div className="bg-slate-200 md:p-10 rounded-lg shadow-md ">
                 <img
                   src={extension}
@@ -57,11 +57,11 @@ export const Homepage: React.FC = () => {
                   className=" w-full h-auto md:h-full p-6"
                 />
                 <div className="flex justify-between ">
-                  <h1 className="md:text-2xl text-xl text-slate-700 font-extrabold px-4">
+                  <h1 className="md:text-2xl text-xl text-slate-700 font-bold ">
                     ALX MultiTone-Magic Extension
                   </h1>
-                  <Link to="/alx-magic-multitone">
-                  <MdArrowForward className="text-gray-500 md:text-4xl text-3xl" />
+                  <Link to="/alx-multitone-magic">
+                  <MdArrowForward className="bg-gray-400 md:text-4xl mr-2 text-3xl rounded-full p-1" />
                 </Link>
                 </div>
               </div>
@@ -73,11 +73,11 @@ export const Homepage: React.FC = () => {
                   className="w-full h-auto md:h-full p-6"
                 />
                 <div className="flex justify-between ">
-                  <h1 className="md:text-2xl text-xl text-slate-700 font-extrabold px-4">
+                  <h1 className="md:text-2xl text-xl text-slate-700 font-bold px-4">
                     Alpha Trade
                   </h1>
                   <Link to="/alpha-trade">
-                  <MdArrowForward className="text-gray-500 md:text-4xl text-3xl" />
+                  <MdArrowForward className="bg-gray-400 md:text-4xl mr-2 text-3xl rounded-full p-1" />
                 </Link>
                 </div>
               </div>
@@ -89,11 +89,11 @@ export const Homepage: React.FC = () => {
                   className=" w-full h-auto md:h-full p-6"
                 />
                 <div className="flex justify-between ">
-                  <h1 className="md:text-2xl text-xl text-slate-700 font-extrabold px-4">
+                  <h1 className="md:text-2xl text-xl text-slate-700 font-bold px-4">
                     Simple Shell 
                   </h1>
                   <Link to="/simple-shell">
-                  <MdArrowForward className="text-gray-500 md:text-4xl text-3xl" />
+                  <MdArrowForward className="bg-gray-400 md:text-4xl mr-2 text-3xl rounded-full p-1" />
                 </Link>
                 </div>
               </div>
@@ -104,11 +104,11 @@ export const Homepage: React.FC = () => {
                   className="w-full h-auto md:h-full p-6 "
                 />
                 <div className="flex justify-between ">
-                  <h1 className="md:text-2xl text-xl text-slate-700 font-extrabold px-4">
+                  <h1 className="md:text-2xl text-xl text-slate-700 font-bold px-4">
                     Kidanga Store
                   </h1>
                   <Link to="/kidanga-store">
-                  <MdArrowForward className="text-gray-500 md:text-4xl text-3xl" />
+                  <MdArrowForward className="bg-gray-400 md:text-4xl mr-2 text-3xl rounded-full p-1" />
                 </Link>
                 </div>
               </div>
@@ -119,11 +119,11 @@ export const Homepage: React.FC = () => {
                   className="w-full h-auto md:h-full p-6"
                 />
                 <div className="flex justify-between ">
-                  <h1 className="md:text-2xl text-xl text-slate-700 font-extrabold px-4">
+                  <h1 className="md:text-2xl text-xl text-slate-700 font-bold px-4">
                     Restful API
                   </h1>
                   <Link to="/restful-api">
-                  <MdArrowForward className="text-gray-500 md:text-4xl text-3xl" />
+                  <MdArrowForward className="bg-gray-400 md:text-4xl mr-2 text-3xl rounded-full p-1" />
                 </Link>
                 </div>
               </div>
@@ -134,11 +134,11 @@ export const Homepage: React.FC = () => {
                   className="w-full h-auto md:h-full p-6"
                 />
                 <div className="flex justify-between ">
-                  <h1 className="md:text-2xl text-xl text-slate-700 font-extrabold px-4">
+                  <h1 className="md:text-2xl text-xl text-slate-700 font-bold px-4">
                     Image Generation App
                   </h1>
                   <Link to="/image-generation-app">
-                  <MdArrowForward className="text-gray-500 md:text-4xl text-3xl" />
+                  <MdArrowForward className="bg-gray-400 md:text-4xl mr-2 text-3xl rounded-full p-1" />
                 </Link>
                 </div>
               </div>

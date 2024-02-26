@@ -1,8 +1,11 @@
-
+import Header from "../components/header"
+// import extension from "../assets/chrome-extension.jpg";
 
 const Imagegeneration = () => {
   return (
-    <div>imagegeneration</div>
+    <div>
+      <Header/>
+    </div>
   )
 }
 

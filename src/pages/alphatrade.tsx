@@ -1,8 +1,10 @@
-
+import Header from "../components/header"
 
 const Alphatrade = () => {
   return (
-    <div>alphatrade</div>
+    <div>
+      <Header/>
+    </div>
   )
 }
 

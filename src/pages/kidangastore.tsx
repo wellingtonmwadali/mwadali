@@ -1,8 +1,10 @@
-
+import Header from "../components/header"
 
 const Kidangastore = () => {
   return (
-    <div>K</div>
+    <div>
+        <Header/>
+    </div>
   )
 }
 

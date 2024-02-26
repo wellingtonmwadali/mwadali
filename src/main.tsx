@@ -17,7 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/" element={<App />} />
         <Route path="/alpha-trade" element={<Alphatrade/>} />
         <Route path="/restful-api" element={<RestfulAPI/>} />
-        <Route path="/alx-magic-multitone" element={<Magicmultitone/>} />
+        <Route path="/alx-multitone-magic" element={<Magicmultitone/>} />
         <Route path="/simple-shell" element={<Simpleshell/>} />
         <Route path="/kidanga-store" element={<Kidangastore/>} />
         <Route path="/image-generation-app" element={<Imagegeneration/>} />

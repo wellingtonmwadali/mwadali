@@ -1,8 +1,10 @@
-
+import Header from "../components/header"
 
 const Simpleshell = () => {
   return (
-    <div>Simpleshell</div>
+    <div>
+        <Header/>
+    </div>
   )
 }
 
