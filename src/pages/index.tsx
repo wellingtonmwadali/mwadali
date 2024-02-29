@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import Header from "../components/header";
 import "../index.css";
 import extension from "../assets/chrome-extension.jpg";
@@ -10,9 +10,22 @@ import imagegenerationapp from "../assets/Image-generation-app.jpg";
 import { MdArrowForward } from "react-icons/md";
 // import { FaGithub, FaLinkedin } from "react-icons/fa";
 import {  Link } from 'react-router-dom';
+import ScrollReveal from 'scrollreveal';
+
 
 
 export const Homepage: React.FC = () => {
+
+    useEffect(() => {
+      // Initialize ScrollReveal
+      ScrollReveal().reveal('.animated', {
+        duration: 1000,
+        delay: 100,
+        origin: 'bottom',
+        distance: '20px',
+        easing: 'ease-in-out',
+      });
+    }, []);
   return (
     <>
       <div>
@@ -33,7 +46,7 @@ export const Homepage: React.FC = () => {
               Transforming ideas into <br></br> amazingly cool sites
             </h1>
             <div className="mt-5">
-              <p className="md:font-medium font-normal text-slate-500 text-center md:text-xl text-2xl ">
+              <p className="animated md:font-medium font-normal text-slate-500 text-center md:text-xl text-2xl ">
                 Hello, I'm Mwadali, a front-end developer, skilled in bringing
                 websites to life with visual flair.<br></br> I create optimised
                 user-friendly interfaces that look great and work smoothly,
@@ -44,13 +57,13 @@ export const Homepage: React.FC = () => {
             </div>
           </div>
           <div className="mt-5 flex justify-center text-lg font-semibold">
-            <button className="rounded-full p-6 bg-slate-300 hover:bg-slate-500">
+            <button className="rounded-full p-6 bg-slate-300 hover:bg-slate-500 animated">
               View Work
             </button>
           </div>
           <div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:mx-16 mx-6 mt-12">
-              <div className="bg-slate-200 md:p-10 rounded-lg shadow-md ">
+              <div className="bg-slate-200 md:p-10 rounded-lg shadow-md animated">
                 <img
                   src={extension}
                   alt="ALX MultiTone Magic Chrome Extension"
@@ -66,7 +79,7 @@ export const Homepage: React.FC = () => {
                 </div>
               </div>
 
-              <div className="bg-slate-200 md:p-10  rounded-lg shadow-md ">
+              <div className="bg-slate-200 md:p-10  rounded-lg shadow-md animated">
                 <img
                   src={alphatrade}
                   alt="Alpha Trade Image "
@@ -82,7 +95,7 @@ export const Homepage: React.FC = () => {
                 </div>
               </div>
 
-              <div className="bg-slate-200 md:p-10 rounded-lg shadow-md">
+              <div className="bg-slate-200 md:p-10 rounded-lg shadow-md  animated">
                 <img
                   src={simpleshell}
                   alt="Simple shell Image"
@@ -97,7 +110,7 @@ export const Homepage: React.FC = () => {
                 </Link>
                 </div>
               </div>
-              <div className="bg-slate-200 md:p-10 rounded-lg shadow-md">
+              <div className="bg-slate-200 md:p-10 rounded-lg shadow-md  animated">
                 <img
                   src={kidangastore}
                   alt="Kidanga Ecommerce store Image"
@@ -112,7 +125,7 @@ export const Homepage: React.FC = () => {
                 </Link>
                 </div>
               </div>
-              <div className="bg-slate-200 md:p-10 rounded-lg shadow-md">
+              <div className="bg-slate-200 md:p-10 rounded-lg shadow-md  animated">
                 <img
                   src={restfulapi}
                   alt="Restful APi Image"
@@ -127,7 +140,7 @@ export const Homepage: React.FC = () => {
                 </Link>
                 </div>
               </div>
-              <div className="bg-slate-200 md:p-10 rounded-lg shadow-md">
+              <div className="bg-slate-200 md:p-10 rounded-lg shadow-md  animated">
                 <img
                   src={imagegenerationapp}
                   alt="Image generation App Image"
