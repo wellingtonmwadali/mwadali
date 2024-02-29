@@ -135,7 +135,7 @@ export const Homepage: React.FC = () => {
                 />
                 <div className="flex justify-between ">
                   <h1 className="md:text-2xl text-xl text-slate-700 font-bold px-4">
-                    Image Generation App
+                    Dalle 3.0
                   </h1>
                   <Link to="/image-generation-app">
                   <MdArrowForward className="bg-gray-400 md:text-4xl mr-2 text-3xl rounded-full p-1" />
