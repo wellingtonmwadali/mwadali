@@ -1,9 +1,21 @@
 import Header from "../components/header";
 import { GoArrowDown } from "react-icons/go";
 import restfulapi from "../assets/Restful-API.jpg";
-import dallebanner from "../assets/DALLE 3.0.png";
+import restfulbanner from "../assets/restfulapi-banner.jpg";
+import ScrollReveal from 'scrollreveal';
+import  { useEffect } from 'react';
 
 const Imagegeneration = () => {
+  useEffect(() => {
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('.animated', {
+      duration: 1000,
+      delay: 100,
+      origin: 'bottom',
+      distance: '20px',
+      easing: 'ease-in-out',
+    });
+  }, []);
   return (
     <div>
       <Header />
@@ -23,10 +35,10 @@ const Imagegeneration = () => {
         </div>
       </div>
       <div className="md:px-40 mt-20 px-20">
-        <h1 className="text-slate-500 font-bold text-2xl">Web Design</h1>
+        <h1 className="text-slate-500 animated font-bold text-2xl">Web Design</h1>
         {/* Inspiration */}
-        <h1 className="font-bold text-xl mt-4">Inspiration:</h1>
-        <p className="font-medium text-lg">
+        <h1 className="font-bold text-xl animated mt-4">Inspiration:</h1>
+        <p className="font-medium animated text-lg">
           This project focuses on Create, Read, Update, and Delete (CRUD)
           operations for users, demonstrates the simplicity and adaptability of
           these fundamental functionalities. Beyond its initial scope, this
@@ -37,8 +49,8 @@ const Imagegeneration = () => {
           scalability.
         </p>
         {/* Approach */}
-        <h1 className="font-bold text-xl mt-10">Approach:</h1>
-        <p className="font-medium text-lg">
+        <h1 className="font-bold text-xl animated mt-10">Approach:</h1>
+        <p className="font-medium animated text-lg">
           We divided responsibilities based on expertise, with one team member
           handling frontend development and the other managing the backend. As
           the frontend developer, I focused on creating user-friendly interfaces
@@ -50,8 +62,8 @@ const Imagegeneration = () => {
           together harmoniously to deliver a smooth user experience.
         </p>
         {/* Constraints */}
-        <h1 className="font-bold text-xl mt-10">Constraints:</h1>
-        <p className="font-medium text-lg">
+        <h1 className="font-bold animated text-xl mt-10">Constraints:</h1>
+        <p className="font-medium animated text-lg">
           Remote work presented communication challenges  requiring us to rely on digital tools for collaboration.
           Despite distance, seamless integration of frontend and backend
           components was crucial. Additionally, technical limitations like
@@ -60,8 +72,8 @@ const Imagegeneration = () => {
           these constraints to deliver the project.
         </p>
         {/* Conclusion */}
-        <h1 className="font-bold text-xl mt-10">Conclusion:</h1>
-        <p className="font-medium text-lg">
+        <h1 className="font-bold animated text-xl mt-10">Conclusion:</h1>
+        <p className="font-medium animated text-lg">
           Despite remote work challenges, our collaborative efforts produced a
           seamless application. With one member focusing on frontend and the
           other on backend development, effective communication and digital
@@ -81,7 +93,7 @@ const Imagegeneration = () => {
       </div>
       <div className="md:px-40 px-8 mt-10 mb-10">
         <img
-          src={dallebanner}
+          src={restfulbanner}
           alt="ALX MultiTone Magic Chrome Extension"
           className="rounded-lg"
         />

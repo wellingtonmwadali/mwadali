@@ -32,7 +32,7 @@ export const Homepage: React.FC = () => {
         <div className="bg-black py-4">
           <Header />
           <div className="mt-10 flex justify-center ">
-            <h1 className="font-serif md:text-9xl text-5xl font-extrabold text-slate-300 ">
+            <h1 className="font-serif md:text-9xl text-5xl font-extrabold text-slate-300 animated">
               <span className="hover:text-purple-800">FRONT</span>{" "}
               <span className="separation-line "></span>{" "}
               <span className="hover:text-purple-900">END </span> <br />

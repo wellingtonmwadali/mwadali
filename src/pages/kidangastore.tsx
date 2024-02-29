@@ -2,8 +2,20 @@ import Header from "../components/header"
 import { GoArrowDown } from "react-icons/go";
 import kidangastore from "../assets/kidanga-store.jpg";
 import kidangabanner from '../assets/kidanga-store-banner.png'
+import ScrollReveal from 'scrollreveal';
+import  { useEffect } from 'react';
 
 const Kidangastore = () => {
+  useEffect(() => {
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('.animated', {
+      duration: 1000,
+      delay: 100,
+      origin: 'bottom',
+      distance: '20px',
+      easing: 'ease-in-out',
+    });
+  }, []);
   return (
     <div>
       <Header />
@@ -21,10 +33,10 @@ const Kidangastore = () => {
         </div>
       </div>
       <div className="md:px-40 mt-20 px-20">
-        <h1 className="text-slate-500 font-bold text-2xl">Web Design</h1>
+        <h1 className="text-slate-500 font-bold animated text-2xl">Web Design</h1>
         {/* Inspiration */}
-        <h1 className="font-bold text-xl mt-4">Inspiration:</h1>
-        <p className="font-medium text-lg">
+        <h1 className="font-bold animated text-xl mt-4">Inspiration:</h1>
+        <p className="font-medium animated text-lg">
           Kidanga Store was inspired by the need for easy access to fresh
           produce from the farm The store connects consumers to fresh farm
           produce,mainly offering a variety of fruits and vegetables alongside
@@ -35,8 +47,8 @@ const Kidangastore = () => {
           Harvest.
         </p>
         {/* Approach */}
-        <h1 className="font-bold text-xl mt-10">Approach:</h1>
-        <p className="font-medium text-lg">
+        <h1 className="font-bold animated text-xl mt-10">Approach:</h1>
+        <p className="font-medium animated text-lg">
           We began by designing the layout and wireframes of our ecommerce
           store, focusing on user experience. Choosing the MERN stack for its
           versatility, we designed the MongoDB database schema to efficiently
@@ -47,8 +59,8 @@ const Kidangastore = () => {
           experience for our customers.
         </p>
         {/* Constraints */}
-        <h1 className="font-bold text-xl mt-10">Constraints:</h1>
-        <p className="font-medium text-lg">
+        <h1 className="font-bold text-xl animated mt-10">Constraints:</h1>
+        <p className="font-medium animated text-lg">
           As a beginner with React and the MERN stack, I encountered a learning
           curve while familiarizing myself with these technologies. Limited
           experience with frontend and backend development posed challenges in
@@ -60,8 +72,8 @@ const Kidangastore = () => {
           develop the platform.
         </p>
         {/* Conclusion */}
-        <h1 className="font-bold text-xl mt-10">Conclusion:</h1>
-        <p className="font-medium text-lg">
+        <h1 className="font-bold animated text-xl mt-10">Conclusion:</h1>
+        <p className="font-medium text-lg animated">
           Despite being novices with React and the MERN stack, my
           journey in building the Kidanga store ecommerce store has been a
           rewarding learning experience. Through careful design, database

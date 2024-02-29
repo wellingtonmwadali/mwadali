@@ -2,8 +2,20 @@ import Header from "../components/header";
 import { GoArrowDown } from "react-icons/go";
 import imagegenerationapp from "../assets/Image-generation-app.jpg";
 import dallebanner from "../assets/DALLE 3.0.png";
+import ScrollReveal from 'scrollreveal';
+import  { useEffect } from 'react';
 
 const Imagegeneration = () => {
+  useEffect(() => {
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('.animated', {
+      duration: 1000,
+      delay: 100,
+      origin: 'bottom',
+      distance: '20px',
+      easing: 'ease-in-out',
+    });
+  }, []);
   return (
     <div>
       <Header />
@@ -21,10 +33,10 @@ const Imagegeneration = () => {
         </div>
       </div>
       <div className="md:px-40 mt-20 px-20">
-        <h1 className="text-slate-500 font-bold text-2xl">Web Design</h1>
+        <h1 className="text-slate-500 font-bold text-2xl animated">Web Design</h1>
         {/* Inspiration */}
-        <h1 className="font-bold text-xl mt-4">Inspiration:</h1>
-        <p className="font-medium text-lg">
+        <h1 className="font-bold text-xl animated mt-4">Inspiration:</h1>
+        <p className="font-medium text-lg animated">
           DALLE 3.0 was inspired by the desire to unlock creativity
           effortlessly. By providing prompts, users can generate unique images,
           sparking imagination and artistic expression. Our goal is to make
@@ -32,8 +44,8 @@ const Imagegeneration = () => {
           flourish and inspiration knows no bounds.
         </p>
         {/* Approach */}
-        <h1 className="font-bold text-xl mt-10">Approach:</h1>
-        <p className="font-medium text-lg">
+        <h1 className="font-bold text-xl animated mt-10">Approach:</h1>
+        <p className="font-medium text-lg animated">
           We kicked off DALLE 3.0 by designing a user-friendly interface,
           prioritizing simplicity. Setting up a ChatGPT account enabled us to
           utilize its API for image generation. Opting for React, Tailwind CSS,
@@ -44,8 +56,8 @@ const Imagegeneration = () => {
           to explore prompted image creation effortlessly.
         </p>
         {/* Constraints */}
-        <h1 className="font-bold text-xl mt-10">Constraints:</h1>
-        <p className="font-medium text-lg">
+        <h1 className="font-bold text-xl mt-10 animated">Constraints:</h1>
+        <p className="font-medium text-lg animated">
           We encountered limitations with the free version of the ChatGPT API,
           which provided a limited number of trials. This constraint required us
           to carefully manage API usage and prioritize testing and development
@@ -54,8 +66,8 @@ const Imagegeneration = () => {
           while staying within the constraints of the free API tier.
         </p>
         {/* Conclusion */}
-        <h1 className="font-bold text-xl mt-10">Conclusion:</h1>
-        <p className="font-medium text-lg">
+        <h1 className="font-bold text-xl mt-10 animated">Conclusion:</h1>
+        <p className="font-medium text-lg animated">
           Despite the constraints posed by the limited trials of the free
           version of the ChatGPT API, our journey in creating DALLE 3.0 has been
           a success. By leveraging React, Tailwind CSS, Vite, and Express, we

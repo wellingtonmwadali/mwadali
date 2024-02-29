@@ -1,8 +1,20 @@
 import Header from "../components/header"
 import simpleshell from "../assets/simple-shell.png";
 import { GoArrowDown } from "react-icons/go";
+import ScrollReveal from 'scrollreveal';
+import  { useEffect } from 'react';
 
 const Simpleshell = () => {
+  useEffect(() => {
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('.animated', {
+      duration: 1000,
+      delay: 100,
+      origin: 'bottom',
+      distance: '20px',
+      easing: 'ease-in-out',
+    });
+  }, []);
   return (
     <div>
       <Header />
@@ -20,10 +32,10 @@ const Simpleshell = () => {
         </div>
       </div>
       <div className="md:px-40 mt-20 px-20">
-        <h1 className="text-slate-500 font-bold text-2xl">Web Design</h1>
+        <h1 className="text-slate-500 font-bold text-2xl animated">Web Design</h1>
         {/* Inspiration */}
-        <h1 className="font-bold text-xl mt-4">General:</h1>
-        <p className="font-medium text-lg">
+        <h1 className="font-bold text-xl mt-4 animated">General:</h1>
+        <p className="font-medium text-lg animated">
           This project is part of the ALX school based curriculumn, it is
           inspired by computing pioneers like Ken Thompson and the creators of
           Unix and programming languages B and C. It aims aim to simplify
@@ -32,8 +44,8 @@ const Simpleshell = () => {
           and PPID to mastering program execution and EOF, it unravels the core
           concepts that define modern computing
         </p>
-        <h1 className="font-bold text-xl mt-4">Approach:</h1>
-        <p className="font-medium text-lg">
+        <h1 className="font-bold text-xl animated mt-4">Approach:</h1>
+        <p className="font-medium animated text-lg">
           In creating our interactive shell, my partner and I opted for
           simplicity and efficiency, using the C programming language. Our
           process began with thorough planning, followed by prototyping to
@@ -42,16 +54,16 @@ const Simpleshell = () => {
           execution, ensuring seamless user interaction. We incorporated testing
           and debugging to ensure the shell's reliability and stability.
         </p>
-        <h1 className="font-bold text-xl mt-4">Constraints:</h1>
-        <p className="font-medium text-lg">
+        <h1 className="font-bold animated text-xl mt-4">Constraints:</h1>
+        <p className="font-medium text-lg animated">
           Despite being remote, my partner and I effectively communicated
           through regular virtual meetings and collaborative tools. We used C to
           create the interactive shell, dividing tasks based on expertise.
           Despite the distance, our shared commitment ensured successful
           development and delivery.
         </p>
-        <h1 className="font-bold text-xl mt-4">Conclusion:</h1>
-        <p className="font-medium text-lg">
+        <h1 className="font-bold animated text-xl mt-4">Conclusion:</h1>
+        <p className="font-medium text-lg animated">
           In conclusion, our journey of creating an interactive shell using C,
           despite the constraint of remote collaboration, has been a testament
           to effective communication and shared dedication. Through regular
