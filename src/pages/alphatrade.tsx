@@ -2,8 +2,20 @@ import Header from "../components/header";
 import alphatrade from "../assets/alpha-trade.jpg";
 import { GoArrowDown } from "react-icons/go";
 import alphatradebanner from "../assets/alpha-trade-banner.jpg";
+import ScrollReveal from 'scrollreveal';
+import  { useEffect } from 'react';
 
 const Alphatrade = () => {
+  useEffect(() => {
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('.animated', {
+      duration: 1000,
+      delay: 100,
+      origin: 'bottom',
+      distance: '20px',
+      easing: 'ease-in-out',
+    });
+  }, []);
   return (
     <div>
       <Header />

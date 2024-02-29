@@ -1,3 +1,4 @@
+import  { useEffect } from 'react';
 import Header from "../components/header";
 import extension from "../assets/chrome-extension.jpg";
 import { GoArrowDown } from "react-icons/go";
@@ -15,8 +16,20 @@ import pink from "../assets/pink.png";
 import orange from "../assets/orange.png";
 import grey from "../assets/grey.png";
 import yellow from "../assets/yellow.png";
+import ScrollReveal from 'scrollreveal';
+
 
 const Magicmultitone = () => {
+  useEffect(() => {
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('.animated', {
+      duration: 1000,
+      delay: 100,
+      origin: 'bottom',
+      distance: '20px',
+      easing: 'ease-in-out',
+    });
+  }, []);
     // Slider settings
   const sliderSettings = {
     dots: true,
@@ -44,10 +57,10 @@ const Magicmultitone = () => {
         </div>
       </div>
       <div className="md:px-40 mt-20 px-20">
-        <h1 className="text-slate-500 font-bold text-2xl">Web Design</h1>
+        <h1 className="text-slate-500 font-bold animated text-2xl">Web Design</h1>
            {/* Inspiration */}
-        <h1 className="font-bold text-xl mt-4">Inspiration:</h1>
-        <p className="font-medium text-lg">
+        <h1 className="font-bold text-xl mt-4 animated">Inspiration:</h1>
+        <p className="font-medium text-lg animated">
           Chrome Themes sparked the idea for ALX Multitone Magic, an extension
           bringing theme customization to the intranet, the learning platform
           for{" "}
@@ -63,8 +76,8 @@ const Magicmultitone = () => {
           spirit of Chrome's customization in a simple, user-friendly way.
         </p>
            {/* Approach */}
-        <h1 className="font-bold text-xl mt-10">Approach:</h1>
-        <p className="font-medium text-lg">
+        <h1 className="font-bold text-xl mt-10 animated">Approach:</h1>
+        <p className="font-medium text-lg animated">
           Our approach to developing the ALX Multitone Magic extension was
           straightforward. We began by researching the psychology of colors and
           understanding how different hues influence user emotions and
@@ -78,8 +91,8 @@ const Magicmultitone = () => {
           remain our priorities to enhance the intranet experience continually.
         </p>
           {/* Constraints */}
-        <h1 className="font-bold text-xl mt-10">Constraints:</h1>
-        <p className="font-medium text-lg">
+        <h1 className="font-bold text-xl animated mt-10">Constraints:</h1>
+        <p className="font-medium animated text-lg">
           Working within constraints, such as it being our first extension
           development experience and collaborating with a remote partner, we
           adopted an organized approach. We started by learning the fundamentals
@@ -94,8 +107,8 @@ const Magicmultitone = () => {
         </p>
         
         {/* Conclusion */}
-        <h1 className="font-bold text-xl mt-10">Conclusion:</h1>
-        <p className="font-medium text-lg">
+        <h1 className="font-bold text-xl mt-10 animated">Conclusion:</h1>
+        <p className="font-medium animated text-lg">
           In conclusion, despite being new to extension development and working
           remotely, our journey with ALX Multitone Magic has been rewarding.
           Through teamwork and dedication, we successfully created a valuable
