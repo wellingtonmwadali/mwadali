@@ -46,12 +46,11 @@ export const Homepage: React.FC = () => {
               Transforming ideas into <br></br> amazingly cool sites
             </h1>
             <div className="mt-5">
-              <p className="animated md:font-medium font-normal text-slate-500 text-center md:text-xl text-2xl ">
+              <p className="animated md:font-medium font-normal text-slate-500 text-center text-lg md:text-xl md:px-40 ">
                 Hello, I'm Mwadali, a front-end developer, skilled in bringing
-                websites to life with visual flair.<br></br> I create optimised
+                websites to life with visual flair. I create optimised
                 user-friendly interfaces that look great and work smoothly,
-                <br></br>
-                making sure sites are not just functional,<br></br> but also a
+                making sure sites are not just functional,but also a
                 joy to explore
               </p>
             </div>
