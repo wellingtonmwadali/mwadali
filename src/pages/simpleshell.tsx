@@ -34,15 +34,9 @@ const Simpleshell = () => {
       <div className="md:px-40 mt-20 px-20">
         <h1 className="text-slate-500 font-bold text-2xl animated">Web Design</h1>
         {/* Inspiration */}
-        <h1 className="font-bold text-xl mt-4 animated">General:</h1>
+        <h1 className="font-bold text-xl mt-4 animated">Description:</h1>
         <p className="font-medium text-lg animated">
-          This project is part of the ALX school based curriculumn, it is
-          inspired by computing pioneers like Ken Thompson and the creators of
-          Unix and programming languages B and C. It aims aim to simplify
-          complex concepts in process management, environment manipulation, and
-          program execution for learners of all levels.From understanding PID
-          and PPID to mastering program execution and EOF, it unravels the core
-          concepts that define modern computing
+          This project is a milestone implementation of the shell, developed as part of the C code curriculum at ALX Africa Software Engineering. Designed to aid students in comprehending advanced shell concepts, "Gates of Shell" delves into processes, system calls, bit manipulation, file management, and error handling. Acting as a simple UNIX command interpreter akin to the basic shell (sh), this program is entirely written in C language.
         </p>
         <h1 className="font-bold text-xl animated mt-4">Approach:</h1>
         <p className="font-medium animated text-lg">
