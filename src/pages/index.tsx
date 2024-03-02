@@ -69,7 +69,7 @@ export const Homepage: React.FC = () => {
                   className=" w-full h-auto md:h-full p-6"
                 />
                 <div className="flex justify-between ">
-                  <h1 className="md:text-2xl text-xl text-slate-700 font-bold ">
+                  <h1 className="md:text-2xl text-xl text-slate-700 font-bold px-4">
                     ALX MultiTone-Magic Extension
                   </h1>
                   <Link to="/alx-multitone-magic">
