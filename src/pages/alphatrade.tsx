@@ -95,7 +95,7 @@ const Alphatrade = () => {
             href="https://alpha-trade.netlify.app/"
             target="_blank"
           >
-            View live extension
+            View live project
           </a>{" "}
         </h1>
       </div>
